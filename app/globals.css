@@ -92,3 +92,11 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+/* Favicon Circle Styles */
+link[rel="icon"] {
+  border-radius: 50%;
+  object-fit: cover;
+  width: 32px;
+  height: 32px;
+}

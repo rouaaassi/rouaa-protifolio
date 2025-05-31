@@ -16,12 +16,31 @@ export const metadata: Metadata = {
     "Portfolio of Roua Assi, a skilled front-end web developer specializing in React, Next.js, and modern web technologies.",
   keywords: "front-end developer, React, Next.js, TypeScript, web development, portfolio",
   authors: [{ name: "Roua Assi" }],
+  icons: {
+    icon: [
+      {
+        url: '/book.png',
+        sizes: '32x32',
+        type: 'image/png',
+        rel: 'icon',
+        media: '(prefers-color-scheme: light)',
+      },
+      {
+        url: '/book.png',
+        sizes: '32x32',
+        type: 'image/png',
+        rel: 'icon',
+        media: '(prefers-color-scheme: dark)',
+      }
+    ],
+    shortcut: '/book.png',
+    apple: '/book.png',
+  },
   openGraph: {
     title: "Roua Assi - Front-End Developer",
     description: "Portfolio of Roua Assi, a skilled front-end web developer",
     type: "website",
   },
-    generator: 'v0.dev'
 }
 
 export default function RootLayout({

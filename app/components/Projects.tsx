@@ -62,7 +62,17 @@ export default function Projects() {
                       />
 
                       <div className="p-6">
-                        <h3 className="text-xl font-semibold text-white mb-3">{project.title}</h3>
+                        <div className="flex justify-between items-center mb-3">
+                          <h3 className="text-xl font-semibold text-white">{project.title}</h3>
+                          {project.title === "Express Management Platform" && (
+                            <span className="bg-green-600 text-white text-xs px-3 py-1 rounded-full
+                              animate-pulse hover:scale-110 transition-all duration-300
+                              shadow-[0_0_15px_rgba(22,163,74,0.5)] hover:shadow-[0_0_20px_rgba(22,163,74,0.7)]
+                              cursor-pointer">
+                              Active
+                            </span>
+                          )}
+                        </div>
 
                         <p className="text-gray-300 mb-4 text-sm leading-relaxed">{project.description}</p>
 
