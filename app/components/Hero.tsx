@@ -103,9 +103,12 @@ export default function Hero() {
               >
                 <motion.a
                   href="mailto:assirouaa25@gmail.com"
-                  className="bg-purple-600 text-white px-6 py-3 rounded-lg hover:bg-purple-700 transition-colors duration-200 flex items-center gap-2 shadow-lg"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-purple-600 text-white px-6 py-3 rounded-lg hover:bg-purple-700 transition-all duration-200 flex items-center gap-2 shadow-lg hover:shadow-xl"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
+                  aria-label="Send email to assirouaa25@gmail.com"
                 >
                   <Mail size={20} />
                   Get In Touch
