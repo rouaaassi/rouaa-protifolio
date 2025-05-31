@@ -58,17 +58,17 @@ export default function Hero() {
       {/* Content Overlay */}
       <div className="container mx-auto px-4 text-center relative z-20">
         <motion.div
-          className="max-w-6xl mx-auto bg-gray-900/80 backdrop-blur-sm rounded-2xl p-8 border border-gray-700"
+          className="max-w-6xl mx-auto bg-gray-900/80 backdrop-blur-sm rounded-2xl p-4 sm:p-6 md:p-8 border border-gray-700"
           initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, ease: [0.21, 0.47, 0.32, 0.98] }}
         >
           {/* Hero content with image */}
-          <div className="grid md:grid-cols-3 gap-8 items-center">
+          <div className="grid md:grid-cols-3 gap-4 sm:gap-6 md:gap-8 items-center">
             {/* Text content - takes 2 columns */}
             <div className="md:col-span-2 text-left">
               <motion.h1
-                className="text-4xl md:text-6xl font-bold text-white mb-6"
+                className="text-3xl sm:text-4xl md:text-6xl font-bold text-white mb-4 sm:mb-6"
                 initial={{ opacity: 0, y: 50 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1, delay: 0.3 }}
@@ -85,7 +85,7 @@ export default function Hero() {
               </motion.h1>
 
               <motion.p
-                className="text-lg md:text-xl text-gray-300 mb-8"
+                className="text-base sm:text-lg md:text-xl text-gray-300 mb-6 sm:mb-8"
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1, delay: 0.5 }}
@@ -96,7 +96,7 @@ export default function Hero() {
               </motion.p>
 
               <motion.div
-                className="flex flex-col sm:flex-row gap-4 mb-8"
+                className="flex flex-col sm:flex-row gap-3 sm:gap-4 mb-6 sm:mb-8"
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1, delay: 0.7 }}
@@ -105,28 +105,28 @@ export default function Hero() {
                   href="mailto:assirouaa25@gmail.com"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-purple-600 text-white px-6 py-3 rounded-lg hover:bg-purple-700 transition-all duration-200 flex items-center gap-2 shadow-lg hover:shadow-xl"
+                  className="bg-purple-600 text-white px-4 sm:px-6 py-2 sm:py-3 rounded-lg hover:bg-purple-700 transition-all duration-200 flex items-center justify-center gap-2 shadow-lg hover:shadow-xl text-sm sm:text-base"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                   aria-label="Send email to assirouaa25@gmail.com"
                 >
-                  <Mail size={20} />
+                  <Mail size={18} className="sm:w-5 sm:h-5" />
                   Get In Touch
                 </motion.a>
                 <motion.a
                   href="/roua-cv.pdf"
                   download="Roua_Assi_CV.pdf"
-                  className="border-2 border-pink-400 text-pink-400 px-6 py-3 rounded-lg hover:bg-pink-400 hover:text-black transition-colors duration-200 flex items-center gap-2"
+                  className="border-2 border-pink-400 text-pink-400 px-4 sm:px-6 py-2 sm:py-3 rounded-lg hover:bg-pink-400 hover:text-black transition-all duration-200 flex items-center justify-center gap-2 text-sm sm:text-base"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                 >
-                  <Download size={20} />
+                  <Download size={18} className="sm:w-5 sm:h-5" />
                   Download CV
                 </motion.a>
               </motion.div>
 
               <motion.div
-                className="flex space-x-6"
+                className="flex space-x-4 sm:space-x-6"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 1, delay: 0.9 }}
@@ -139,7 +139,7 @@ export default function Hero() {
                   aria-label="GitHub"
                   whileHover={{ scale: 1.2, rotate: 5 }}
                 >
-                  <Github size={32} />
+                  <Github size={28} className="sm:w-8 sm:h-8" />
                 </motion.a>
                 <motion.a
                   href="https://www.linkedin.com/in/roua-assi-a43ba12b8?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
@@ -149,7 +149,7 @@ export default function Hero() {
                   aria-label="LinkedIn"
                   whileHover={{ scale: 1.2, rotate: -5 }}
                 >
-                  <Linkedin size={32} />
+                  <Linkedin size={28} className="sm:w-8 sm:h-8" />
                 </motion.a>
               </motion.div>
             </div>
@@ -158,14 +158,14 @@ export default function Hero() {
             <div className="md:col-span-1">
               <motion.div
                 id="hero-profile-image"
-                className="relative mx-auto w-80 h-80"
+                className="relative mx-auto w-64 h-64 sm:w-72 sm:h-72 md:w-80 md:h-80"
                 initial={{ opacity: 0, scale: 0.8 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 1, delay: 0.4 }}
               >
                 {/* Glowing background */}
                 <motion.div
-                  className="absolute -inset-4 bg-gradient-to-r from-purple-500/30 via-pink-500/30 to-purple-500/30 rounded-full blur-xl"
+                  className="absolute -inset-3 sm:-inset-4 bg-gradient-to-r from-purple-500/30 via-pink-500/30 to-purple-500/30 rounded-full blur-xl"
                   animate={{
                     scale: [1, 1.1, 1],
                     opacity: [0.3, 0.6, 0.3],
