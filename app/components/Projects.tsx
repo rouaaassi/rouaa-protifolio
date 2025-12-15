@@ -39,6 +39,15 @@ export default function Projects() {
       liveUrl: "https://v0-build-website-mocha.vercel.app/",
       githubUrl: "https://github.com/rouaaassi/trans-live-main",
     },
+     {
+      title: "Game Hosting Website",
+      description:
+        "A modern and responsive gaming platform that allows users to browse games by category, view details, and submit reviews through a clean and user-friendly interface.",
+      image: "/Game.png",
+      technologies: ["Next.js", "TypeScript", "shadcn", "Zustand", "Tailwind"],
+      liveUrl: "https://game-hosting-website-five.vercel.app",
+      githubUrl: "https://github.com/rouaaassi/Game_Hosting_Website",
+    },
   ]
 
   return (

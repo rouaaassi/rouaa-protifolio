@@ -114,7 +114,7 @@ export default function Hero() {
                   Get In Touch
                 </motion.a>
                 <motion.a
-                  href="/roua-cv.pdf"
+                  href="/Front-End-developer-cv.pdf"
                   download="Roua_Assi_CV.pdf"
                   className="border-2 border-pink-400 text-pink-400 px-4 sm:px-6 py-2 sm:py-3 rounded-lg hover:bg-pink-400 hover:text-black transition-all duration-200 flex items-center justify-center gap-2 text-sm sm:text-base"
                   whileHover={{ scale: 1.05 }}
