@@ -48,6 +48,15 @@ export default function Projects() {
       liveUrl: "https://game-hosting-website-five.vercel.app",
       githubUrl: "https://github.com/rouaaassi/Game_Hosting_Website",
     },
+     {
+      title: "Syria Gates",
+      description:
+        "Syria Gates is a modern platform that uses programming and interactive design to present Syria’s rich heritage through a contemporary technological experience.",
+      image: "/gates.png",
+      technologies: ["Next.js", "TypeScript", "shadcn", "Zustand", "Tailwind"],
+      liveUrl: "https://syria-gates.vercel.app/",
+      githubUrl: "https://gitlab.com/rouaassi12/syria_gates.git",
+    },
   ]
 
   return (
