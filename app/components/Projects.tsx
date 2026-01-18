@@ -60,11 +60,20 @@ export default function Projects() {
      {
       title: "Quant Finance dashboard",
       description:
-        " Quant Dashboard, was implemented with a strong focus on performance optimization, scalable architecture, and clean separation of concerns, simulating real-world dashboard requirements..",
+        " Quant Dashboard, was implemented with a strong focus on performance optimization, scalable architecture, and clean separation of concerns.",
       image: "/quant.png",
       technologies: ["Next.js", "TypeScript", "shadcn", "Zustand", "Tailwind","React Query"],
       liveUrl: "https://quant-dashboard-vert.vercel.app/",
       githubUrl: "https://github.com/rouaaassi/Quant-Dashboard.git",
+    },
+     {
+      title: "Reef landing page",
+      description:
+        " Reef landing page is a modern and visually appealing landing page for a fictional product or service called `reef`.",
+      image: "/reef.png",
+      technologies: ["React.js", "TypeScript", "MUI", "vite", "Tailwind","Farmer motion"],
+      liveUrl: "https://reef-landing-three.vercel.app/",
+      githubUrl: "https://github.com/rouaaassi/reef.git",
     },
   ]
 
