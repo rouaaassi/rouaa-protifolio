@@ -57,6 +57,15 @@ export default function Projects() {
       liveUrl: "https://syria-gates.vercel.app/",
       githubUrl: "https://gitlab.com/rouaassi12/syria_gates.git",
     },
+     {
+      title: "Quant Finance dashboard",
+      description:
+        " Quant Dashboard, was implemented with a strong focus on performance optimization, scalable architecture, and clean separation of concerns, simulating real-world dashboard requirements..",
+      image: "/quant.png",
+      technologies: ["Next.js", "TypeScript", "shadcn", "Zustand", "Tailwind","React Query"],
+      liveUrl: "https://quant-dashboard-vert.vercel.app/",
+      githubUrl: "https://github.com/rouaaassi/Quant-Dashboard.git",
+    },
   ]
 
   return (

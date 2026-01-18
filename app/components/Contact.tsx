@@ -71,7 +71,7 @@ export default function Contact() {
                     <div className="space-y-4 cursor-pointer">
                       <div className="flex items-center gap-4">
                         <Mail className="text-purple-500" size={24} />
-                        <span className="text-gray-300">assirouaa25@gmail.com</span>
+                        <span className="text-gray-300">rouaasse@gmail.com</span>
                       </div>
                       <div className="flex items-center gap-4">
                         <Phone className="text-purple-500" size={24} />
